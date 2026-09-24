@@ -1,0 +1,11 @@
+/gem5/
+/artifacts/
+**/__pycache__/
+*.pyc
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
