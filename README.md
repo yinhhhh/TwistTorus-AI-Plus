@@ -19,6 +19,8 @@ minimal paths are congested, allowing a packet to reach a less congested set of
 minimal paths. A dedicated spanning-tree escape VC, with an irreversible
 Adaptive-to-Escape transition, provides deadlock freedom.
 
+Please see our report for derivation and experiment details :)
+
 ## Contents
 
 | Path | Contents |
@@ -72,11 +74,3 @@ For a short reproduction test, select only a few injection rates:
 ```bash
 RATES='0.05 0.10' JOBS=4 ./reproducibility/run_report_vnet0_eval.sh
 ```
-
-New results are written under `reproducibility/results/rerun_*`. Published CSV
-files and figures are already included under `reproducibility/results/`.
-
-Modified gem5 files retain their upstream copyright headers; the gem5 BSD
-license is included as `LICENSE.gem5`. For the topology definitions, diameter
-proof, routing design, implementation details, and full evaluation, see
-`report.pdf`.
